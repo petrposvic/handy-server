@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>youtube-dl</title>
+</head>
+<body>
+
+<h1>List of URLs</h1>
+<ul>
+{% for url in urls %}
+  <li><a href="http://localhost:5000/vlc?url={{ url.base64 }}">{{ url.encoded }}</a></li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
